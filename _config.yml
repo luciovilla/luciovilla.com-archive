@@ -6,7 +6,7 @@ markdown: redcarpet
 highlighter: pygments
 logo: false
 paginate: 3
-baseurl: /
+baseurl: /luciovilla
 domain_name: 'http://luciovilla.github.io/luciovilla'
 google_analytics: 'UA-63525175-1'
 
