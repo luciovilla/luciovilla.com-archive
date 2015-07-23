@@ -20,10 +20,11 @@ about: 'about.html'
                 {% if site.description %} {{ site.description }} {% endif %}
             </h2>
             <div class="menu-button-cont">
-                <a class="menu-button" href='#web'> Web </a>
-                <a class="menu-button" href='#photo'> Photo </a>
-                <a class="menu-button" href='#blog'> Blog </a>
-                <a class="menu-button" href='#bio'> Bio </a>
+                <a class="menu-button" href='#web'>  Web  </a>
+                <a class="menu-button" href='#photo'>Photo</a>
+                <a class="menu-button" href='#blog'>Blog</a>
+                <a class="menu-button" href='#bio'>  Bio  </a>
+                <a class="menu-button" href='#contact'>Contact</a>
             </div>
         </div>
     </div>
@@ -31,23 +32,80 @@ about: 'about.html'
 
 
 <main id="web" class="content">
-    <article class="post">
+    <article class="post" style="max-width: 1120px;">
         <header class="post-header">
             <h2 class="post-title">Web Work</h2>
         </header>
         <section class="post-excerpt">
-             Web work will go here....
+             <div class="masonry">
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/web/boxing.png">
+                    <a href="http://www.vivelohoy.com/el-combate-del-siglo">
+                    View Project</a>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/web/pr.png">
+                    <a href="http://www.vivelohoy.com/especiales/puerto-rico-exporta-adictos-a-chicago">
+                    View Project</a>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/web/qgis.png">
+                    <a href="http://www.vivelohoy.com/chicago/8440106/resultados-de-la-segunda-vuelta-a-la-alcaldia-por-recinto">
+                    View Project</a>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/web/mapbox.png">
+                    <a href="http://www.vivelohoy.com/chicago/8440123/resultados-de-la-contienda-electoral-en-los-distritos-con-mayoria-latina-en-chicago">
+                    View Project</a>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/web/vida.png">
+                    <a href="http://www.luciovilla.com/projects/care/">
+                    View Project</a>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/web/nahj.png">
+                    <a href="http://www.nahj-chi.org">
+                    View Project</a>
+                </div>
+             </div>
         </section>
     </article>
 </main>
 
-<main id="photo" class="content">
-    <article class="post">
+<main id="photo" class="content grey-bg">
+    <article class="post" style="max-width: 1120px;">
         <header class="post-header">
             <h2 class="post-title">Photography</h2>
         </header>
         <section class="post-excerpt">
-             Photography work will go here...
+             <div class="masonry">
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/photo/editorial.jpg">
+                    <p>EDITORIAL</p>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/photo/pr.jpg">
+                    <p>FEATURES</p>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/photo/formals.jpg">
+                    <p>FORMALS</p>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/photo/la.jpg">
+                    <p>OCCUPY LA</p>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/photo/market.jpg">
+                    <p>PR/MARKETING</p>
+                </div>
+                <div class="item">
+                    <img src="{{ site.baseurl }}/assets/images/photo/bay.jpg">
+                    <p>HA LONG BAY</p>
+                </div>
+                
+             </div>
         </section>
     </article>
 </main>
@@ -58,18 +116,14 @@ about: 'about.html'
 
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         </header>
         <section class="post-excerpt">
-            {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
+            {{ post.excerpt }} <a class="read-more" href="{{ site.baseurl }}{{ post.url }}">&raquo;</a>
         </section>
         <footer class="post-meta">
-            {% if site.author %}
-                <img class="author-thumb" src="assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
-            {% endif %}
             {% if post.categories.size > 0 %}
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
+                {{ post.categories | array_to_sentence_string | prepend: 'Category: ' }}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
@@ -81,14 +135,31 @@ about: 'about.html'
 
 </main>
 
-<main id="bio" class="content">
+<main id="bio" class="content grey-bg">
     <article class="post">
         <header class="post-header">
             <h2 class="post-title">About Me</h2>
         </header>
         <section class="post-excerpt">
-             <img style="  margin: 10px 20px 10px 0; max-width: 320px; float: left;" src="http://www.luciovilla.com/wp-content/uploads/2014/04/me-600x398.jpg">
-             <p>Lucio Villa is a photojournalist and News Applications Developer at Hoy Chicago. Villa completed a year-long fellowship at The Chicago Reporter, an award-winning investigative magazine, in 2013. He’s covered immigration, health and trauma issues through long-term visual documentary work and has experience doing data visualizations. His work has appeared internationally through EFE and locally at The Chicago Tribune, Chicago Catalyst among others.<br><br>Villa is originally from Compton, CA and graduated from Cal State Fullerton with a Bachelor’s Degree in Photojournalism.<br><br>He enjoys attending hackathons, member of Latino Techies, board member of NAHJ Chicago and enjoys teaching journalists about open-source tools for reporting.</p>
+             <img class="bio-image" src="http://www.luciovilla.com/wp-content/uploads/2014/04/me-600x398.jpg">
+             <p>Lucio Villa is a photojournalist and News Applications Developer at Hoy Chicago. Villa completed a year-long fellowship at The Chicago Reporter, an award-winning investigative magazine, in 2013. He’s covered immigration, health and trauma issues through long-term visual documentary work and has experience doing data visualizations. His work has appeared internationally through EFE and locally at The Chicago Tribune, Chicago Catalyst among others.<br><br>Villa is originally from Compton, CA and graduated from Cal State Fullerton with a Bachelor’s Degree in Photojournalism.<br><br>He enjoys attending hackathons, member of Latino Techies, board member of NAHJ Chicago and enjoys teaching journalists about open-source tools for reporting/data.</p>
+        </section>
+    </article>
+</main>
+
+<main id="contact" class="content">
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title">Contact</h2>
+        </header>
+        <section class="post-excerpt">
+            <br>
+            <a href="https://twitter.com/luciovilla" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://instagram.com/lucio310" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/luciovilla" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/luciovilla" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            <br>
+            <a href="mailto:contact@luciovilla.com">contact[at]luciovilla.com</a></p>
         </section>
     </article>
 </main>

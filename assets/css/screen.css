@@ -463,6 +463,13 @@ margin on the iframe, cause it breaks stuff. */
     vertical-align: middle;
 }
 
+.content {
+    padding: 5rem 0;
+}
+
+.grey-bg {
+    background: #f5f8fa;
+}
 
 /* ==========================================================================
    4. General - The main styles for the the theme
@@ -474,7 +481,6 @@ margin on the iframe, cause it breaks stuff. */
     display: table;
     width: 100%;
     height: 100%;
-    margin-bottom: 5rem;
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
@@ -736,25 +742,6 @@ margin on the iframe, cause it breaks stuff. */
     word-break: break-word;
     hyphens: auto;
     margin: 0 auto;
-}
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
 }
 
 body:not(.post-template) .post-title {
@@ -1157,6 +1144,12 @@ body:not(.post-template) .post-title {
     padding: 3px;
     margin: -100px auto 0 auto;
     box-shadow: none;
+}
+
+.bio-image {
+    margin: 0 0 6px 26px;
+    max-width: 320px;
+    float: right;
 }
 
 .author-title {

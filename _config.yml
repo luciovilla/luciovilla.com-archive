@@ -1,14 +1,15 @@
 name: Lucio Villa
-description: "News Applications Developer & Photographer"
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+description: "Web Developer & Photographer"
+meta_description: "Portfolio and blog site for Lucio Villa."
 
 markdown: redcarpet
 highlighter: pygments
 logo: false
 paginate: 3
-baseurl: /
-google_analytics: 'UA-XXXXXXXX-X'
+baseurl:
+domain_name: 'http://luciovilla.github.io/luciovilla'
+google_analytics: 'UA-63525175-1'
 
 # Details for the RSS feed generator
-url:            'blog url'
+url:            'http://luciovilla.github.io/luciovilla'
 author:         'Lucio Villa'
