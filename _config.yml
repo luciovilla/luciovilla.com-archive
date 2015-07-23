@@ -1,12 +1,12 @@
 name: Lucio Villa
-description: "Web Developer, Photographer, Latino"
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+description: "Web Developer & Photographer"
+meta_description: "Portfolio and blog site for Lucio Villa."
 
 markdown: redcarpet
 highlighter: pygments
 logo: false
 paginate: 3
-baseurl: /luciovilla
+baseurl:
 domain_name: 'http://luciovilla.github.io/luciovilla'
 google_analytics: 'UA-63525175-1'
 

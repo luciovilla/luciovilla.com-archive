@@ -6,6 +6,9 @@
 
     <title>{{ site.name }} - {{ site.description }}</title>
     <meta name="description" content="{{ site.meta_description}}" />
+    <meta property="og:title" content="{{ site.name }} | {{ site.description }}" />
+    <meta property="og:description" content="{{ site.meta_description}}" />
+    <meta property="og:site_name" content="{{ site.name }} | {{ site.description }}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
@@ -15,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- Customisation  -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
@@ -22,14 +26,14 @@
     {{ content }}
     <footer class="site-footer clearfix">
       <section class="copyright">
-        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; 
+        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy;
               {{date format="YYYY"}} &bull; All rights reserved.
       </section>
-      <section class="poweredby">Made with Jekyll using 
+      <section class="poweredby">Made with Jekyll using
         <a href="http://github.com/rosario/kasper">Kasper theme</a>
       </section>
     </footer>
-    
+
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/index.js"></script>
