@@ -2,7 +2,7 @@ name: Lucio Villa
 description: "Front-end Web Developer & Photographer"
 meta_description: "Portfolio and blog site for Lucio Villa."
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 3
