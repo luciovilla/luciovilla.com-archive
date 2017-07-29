@@ -3,7 +3,7 @@ description: "Front-end Web Developer & Photographer"
 meta_description: "Portfolio and blog site for Lucio Villa."
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 3
 baseurl:
