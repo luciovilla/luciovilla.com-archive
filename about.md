@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-<img style="margin: 0" src="http://www.luciovilla.com/wp-content/uploads/2014/04/me-600x398.jpg">
+<img style="margin: 0" src="http://luciovilla.com/assets/images/profile.jpg">
 <br>
 Lucio Villa is a photojournalist and News Applications Developer at Hoy Chicago. Villa completed a year-long fellowship at The Chicago Reporter, an award-winning investigative magazine, in 2013. He’s covered immigration, health and trauma issues through long-term visual documentary work and has experience doing data visualizations. His work has appeared internationally through EFE and locally at The Chicago Tribune, Chicago Catalyst among others.
 
