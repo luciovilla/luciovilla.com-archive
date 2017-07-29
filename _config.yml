@@ -1,5 +1,5 @@
 name: Lucio Villa
-description: "Web Developer & Photographer"
+description: "Front-end Web Developer & Photographer"
 meta_description: "Portfolio and blog site for Lucio Villa."
 
 markdown: redcarpet
@@ -7,9 +7,9 @@ highlighter: pygments
 logo: false
 paginate: 3
 baseurl:
-domain_name: 'http://luciovilla.github.io/luciovilla'
+domain_name: 'http://luciovilla.com'
 google_analytics: 'UA-63525175-1'
 
 # Details for the RSS feed generator
-url:            'http://luciovilla.github.io/luciovilla'
+url:            'http://luciovilla.com'
 author:         'Lucio Villa'
