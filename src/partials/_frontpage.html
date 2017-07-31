@@ -1,0 +1,63 @@
+<section id="web" class="content">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">Web Work</h2>
+    </header>
+    <div class="post-excerpt">
+    	<div class="grid">
+
+    	<% json.web.forEach(function(item) { %>
+        <div class="item">
+        	<a href="<%= item.link %>" target="_blank">
+	          <img src="/assets/img/webwork/<%= item.img %>">
+	          <div class="title"><%= item.title %></div>
+	          <div class="info"><%= item.info %></div>
+          </a>
+          <div class="tools"><%= item.tools %><% if (item.repo) { %><span class="repo"><a href="<%= item.repo %>" target="_blank"><i class="fa fa-github-square"></i></a></span><% } %></div>
+        </div> 
+      <% }); %>
+
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="photo" class="content grey-bg">
+  <article class="post">
+    <header class="post-header">
+    	<h2 class="post-title">Photography</h2>
+    </header>
+    <div class="post-excerpt">
+      <div class="grid">
+
+    	<% json.photo.forEach(function(item) { %>
+        <div class="item photo">
+          <img src="/assets/img/photowork/<%= item.img %>.jpg">
+          <div class="title"><%= item.title %></div>
+        </div> 
+      <% }); %>
+
+      </div> 
+    </div>
+  </article>
+</section>
+
+
+<section id="bio" class="content">
+  <article class="post about">
+    <header class="post-header">
+    	<h2 class="post-title">About Me</h2>
+    </header>
+    <div class="post-excerpt">
+	  	<figure class="bio-image">
+	      <img src="/assets/img/me.jpg">
+	      <div class="byline">Photo by <a target="_blank" href="http://www.raywhitehouse.com/">Ray Whitehouse</a></div>
+	    </figure>
+      <p>Currently working at The San Francisco Chronicle as an Interactive Producer, designing and developing interactive stories. Previously I worked at Hoy Chicago, a Spanish daily, as a News Apps Developer and at The Chicago Reporter as a Photojournalism Fellow.</p>
+      <p>During my time at The Chicago Reporter, I realized that I can utilize my web development skills in journalism and started exploring data visualizations, map tools and open-source apps.</p>
+      <p>Originally from Compton, CA, and graduated from Cal State Fullerton with a Bachelor’s Degree in Photojournalism.</p>
+      <p>I enjoy attending hackathons, co-founder of <a href="http://www.codelatino.com/" target="_blank">Code Latino Chicago</a> and the <a href="https://www.meetup.com/Latino-Techies/" target="_blank">Latino Techies Chicago Meetup</a>, member of the National Association of Hispanic Journalists (NAHJ).</p>
+      <p>Catch me at <a href="https://www.ire.org/events-and-training/event/3189/" target="_blank">NICAR 2018</a>.</p>
+    </div>
+  </article>
+</section>
