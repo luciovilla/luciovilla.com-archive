@@ -1,6 +1,6 @@
 /*
 
-Sets up a connect server to work from the /docs folder. May also set up a
+Sets up a connect server to work from the /build folder. May also set up a
 livereload server at some point.
 
 */
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         options: {
           hostname: "localhost",
           livereload: true,
-          base: "./docs",
+          base: "./build",
           //middleware to protect against case-insensitive file systems
           middleware: function(connect, options, ware) {
             var base = options.base.pop();

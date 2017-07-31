@@ -1,7 +1,7 @@
 /*
 
-Build HTML files using any data loaded onto the shared state. See also loadCSV
-and loadSheets, which import data in a compatible way.
+Build HTML files using any data loaded onto the shared state. See also
+loadSheets, which import data in a compatible way.
 
 */
 
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
   };
 
   grunt.registerTask("build", "Processes index.html using shared data (if available)", function() {
-    var files = grunt.file.expandMapping(["**/*.html", "!**/_*.html", "!js/**/*.html"], "docs", { cwd: "src" });
+    var files = grunt.file.expandMapping(["**/*.html", "!**/_*.html", "!js/**/*.html"], "build", { cwd: "src" });
     var data = Object.create(grunt.data || {});
     data.t = grunt.template;
     files.forEach(function(file) {

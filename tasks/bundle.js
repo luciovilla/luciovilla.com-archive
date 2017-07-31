@@ -16,15 +16,15 @@ module.exports = function(grunt) {
 
     //specify starter files here - if you need additionally built JS, just add it.
     var seeds = {
-      "./src/js/main.js": "docs/app.js"
+      "./src/js/main.js": "build/app.js"
     };
 
     async.forEachOf(seeds, function(dest, src, c) {
       var b = browserify({ debug: mode == "dev" });
       b.transform(babel);
 
-      //make sure docs/ exists
-      grunt.file.mkdir("docs");
+      //make sure build/ exists
+      grunt.file.mkdir("build");
       var output = fs.createWriteStream(dest);
 
       b.add(src);
