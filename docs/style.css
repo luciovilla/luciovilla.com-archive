@@ -763,10 +763,12 @@ margin on the iframe, cause it breaks stuff. */
   hyphens: auto;
   margin: 0 auto;
 }
-.post.about {
+.post.about,
+.post.contact {
   max-width: 700px;
 }
-.post.about a {
+.post.about a,
+.post.contact a {
   text-decoration: underline;
 }
 body:not(.post-template) .post-title {
@@ -1270,7 +1272,7 @@ body:not(.post-template) .post-title {
   font-size: 1rem;
   line-height: 1.75em;
   color: #BBC7CC;
-  background-color: #f3f3f3;
+  background-color: #f5f8fa;
 }
 .site-footer a {
   color: #BBC7CC;
@@ -1729,8 +1731,8 @@ body {
   flex: 0 0 29%;
   margin: 1em 1em 1.5em 0;
   width: 100%;
-  border: solid 1px #f3f3f3;
-  background-color: #f3f3f3;
+  border: solid 1px #f5f8fa;
+  background-color: #f5f8fa;
   padding-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -1766,4 +1768,13 @@ body {
 .item.photo {
   background-color: #f5f8fa;
   border: none;
+}
+#contact {
+  background-color: #f5f8fa;
+}
+.contact.post {
+  margin-bottom: 0;
+}
+.contact .post-excerpt {
+  margin-top: 1em;
 }
