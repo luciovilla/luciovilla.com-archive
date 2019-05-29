@@ -24,6 +24,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
 article,
 aside,
 details,
@@ -710,14 +711,14 @@ margin on the iframe, cause it breaks stuff. */
   display: inline-block;
   letter-spacing: -1px;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto";
   color: #fff;
 }
 .page-description {
   font-size: 2rem;
   line-height: 1.5em;
   font-weight: 400;
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans";
   letter-spacing: 0.01rem;
   clear: left;
   color: rgba(255, 255, 255, 0.8);
@@ -735,8 +736,11 @@ margin on the iframe, cause it breaks stuff. */
 }
 .no-cover .main-nav.overlay .back-button,
 .menu-button {
-  color: #9EABB3;
+  color: #222;
   border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans";
+  font-weight: 600;
 }
 /* Add subtle load-in animation for content on the home page */
 .home-template .page-title,
@@ -765,7 +769,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 .post.about,
 .post.contact {
-  max-width: 700px;
+  max-width: 900px;
 }
 .post.about a,
 .post.contact a {
@@ -773,6 +777,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 body:not(.post-template) .post-title {
   font-size: 3.6rem;
+  font-family: "Roboto";
 }
 .post-title a {
   text-decoration: none;

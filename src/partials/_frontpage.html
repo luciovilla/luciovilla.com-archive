@@ -22,26 +22,6 @@
   </article>
 </section>
 
-<section id="photo" class="content grey-bg">
-  <article class="post">
-    <header class="post-header">
-    	<h2 class="post-title">Photography</h2>
-    </header>
-    <div class="post-excerpt">
-      <div class="grid">
-
-    	<% json.photo.forEach(function(item) { %>
-        <div class="item photo">
-          <img src="/assets/img/photowork/<%= item.img %>.jpg">
-          <div class="title"><%= item.title %></div>
-        </div> 
-      <% }); %>
-
-      </div> 
-    </div>
-  </article>
-</section>
-
 
 <section id="bio" class="content">
   <article class="post about">

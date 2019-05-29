@@ -662,7 +662,7 @@ margin on the iframe, cause it breaks stuff. */
     display:inline-block;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: @roboto;
     color: #fff;
 }
 
@@ -670,7 +670,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: @sans;
     letter-spacing: 0.01rem;
     clear:left;
     color: rgba(255,255,255,0.8);
@@ -692,8 +692,11 @@ margin on the iframe, cause it breaks stuff. */
 
 .no-cover .main-nav.overlay .back-button,
 .menu-button {
-    color: #9EABB3;
+    color: #222;
     border-color: rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    font-family:@sans;
+    font-weight: 600;
 }
 
 /* Add subtle load-in animation for content on the home page */
@@ -722,7 +725,7 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0 auto;
 
     &.about, &.contact{
-        max-width:700px;
+        max-width:900px;
         a{
             text-decoration:underline;
         }
@@ -731,6 +734,7 @@ margin on the iframe, cause it breaks stuff. */
 
 body:not(.post-template) .post-title {
     font-size: 3.6rem;
+    font-family:@roboto;
 }
 
 .post-title a {
