@@ -1738,7 +1738,6 @@ body {
   width: 100%;
   border: solid 1px #f5f8fa;
   background-color: #f5f8fa;
-  padding-bottom: 10px;
 }
 @media (max-width: 768px) {
   .item {
@@ -1747,11 +1746,15 @@ body {
     flex: 0 0 100%;
   }
 }
+.item hr {
+  margin: 5px 10px 10px;
+  border-top: 1px solid #cecece;
+}
 .item img {
   width: 100%;
 }
 .item .title {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px;
   padding: 0 10px;
   font-weight: 600;
@@ -1759,13 +1762,20 @@ body {
 .item .info {
   font-family: "Open Sans";
   font-size: 14px;
-  padding: 0 10px 10px;
-  border-bottom: 1px solid #dedede;
+  margin: 0 0 5px;
+  padding: 0 10px;
 }
-.item .tools {
+.item .tools,
+.item .awards {
   font-family: "Open Sans";
   font-size: 12px;
-  padding: 10px 0 0 10px;
+  padding: 0 10px;
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+.item .tools span,
+.item .awards span {
+  font-weight: bold;
 }
 .item .repo {
   float: right;
@@ -1782,4 +1792,13 @@ body {
 }
 .contact .post-excerpt {
   margin-top: 1em;
+}
+#awards {
+  text-align: center;
+}
+#awards .award {
+  font-family: "Open Sans";
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
 }

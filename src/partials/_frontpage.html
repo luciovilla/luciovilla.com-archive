@@ -13,7 +13,17 @@
 	          <div class="title"><%= item.title %></div>
 	          <div class="info"><%= item.info %></div>
           </a>
-          <div class="tools"><%= item.tools %><% if (item.repo) { %><span class="repo"><a href="<%= item.repo %>" target="_blank"><i class="fa fa-github-square"></i></a></span><% } %></div>
+
+          <hr>
+
+          <%if (item.tools) {%>
+          <div class="tools">Tools: <%= item.tools %></div>
+          <%}%>
+
+          <%if (item.awards) {%>
+          <div class="awards">Awards: <%= item.awards %></div>
+          <%}%>
+
         </div> 
       <% }); %>
 
@@ -21,7 +31,6 @@
     </div>
   </article>
 </section>
-
 
 <section id="bio" class="content">
   <article class="post about">
@@ -33,13 +42,37 @@
 	      <img src="/assets/img/me.jpg">
 	      <div class="byline">Photo by <a target="_blank" href="http://www.raywhitehouse.com/">Ray Whitehouse</a></div>
 	    </figure>
-      <p>Currently working at The San Francisco Chronicle as an Interactive Producer, designing and developing interactive stories. Previously I worked at Hoy Chicago, a Spanish daily, as a News Apps Developer and at The Chicago Reporter as a Photojournalism Fellow.</p>
-      <p>During my time at The Chicago Reporter, I realized that I can utilize my web development skills in journalism and started exploring data visualizations, map tools and open-source apps.</p>
-      <p>Originally from Compton, CA, and graduated from Cal State Fullerton with a Bachelor’s Degree in Photojournalism.</p>
-      <p>I enjoy attending hackathons, co-founder of <a href="http://www.codelatino.com/" target="_blank">Code Latino Chicago</a> and the <a href="https://www.meetup.com/Latino-Techies/" target="_blank">Latino Techies Chicago Meetup</a>, member of the National Association of Hispanic Journalists (NAHJ) and Investigative Reporters and Editors (IRE).</p>
+      <p>Hi! I’m a journalist who mostly designs and codes. I have experience working inside and outside the newsroom and bring a wealth of experience producing meaningful while thinking about the user experience. I’m passionate about journalism, curious about how readers engage with stories and enjoy coming up with unique and creative ways to tell stories.</p>
+      <p>Currently, I work at The San Francisco Chronicle as an interactive producer where I mostly design and develop interactive stories, design workflows, a bit of project management. I also contribute on directing visuals and push the newsroom to explore new ways of storytelling. I’ve helped implement a style guide, ArchieML, organized more collaboration of the visual teams and helped designed some of the best digital work The Chronicle has been recognized for.</p>
+      <p>Previously, I worked in Chicago at Hoy Newspaper, a Spanish daily publication that’s part of Tribune Publishing, as a news applications developer and at The Chicago Reporter as a photojournalism fellow. During my time in Chicago, I went from being a photojournalist to a web designer/developer after realizing that I could utilize my web skills in journalism. And having a visuals background has influenced my designs and how I collaborate with visual content creators.</p>
+      <p>Aside from work, this spring I helped instruct a class on editorial web design and development at the Graduate School of Journalism in UC Berkeley. I am committed to diversifying our industry. I’m the board President of the Bay Area chapter of the National Association of Hispanic Journalists; recently listed in Editor & Publisher’s 2019 “<a href="https://www.editorandpublisher.com/feature/eps-25-under-35-2019-the-next-generation-of-newspaper-leaders-wants-to-keep-the-industry-moving/" target="_blank">25 Under 35: The Future Generation of Newspaper Leaders.</a>”; co-founder of <a href="http://www.codelatino.com/" target="_blank">Code Latino Chicago</a> and the <a href="https://www.meetup.com/Latino-Techies/" target="_blank">Latino Techies Chicago Meetup</a>.</p>
+      <p>I’m originally from Compton, CA, and graduated from Cal State Fullerton (Go Titans) with a Bachelor’s Degree in Photo Communications. During my time at Fullerton I was a photo editor at The Daily Titan. Prior to being a journalism major I was studying Computer Science at Cal Poly Pomona (Go Broncos) where I was a photo editor at The Poly Post for two years before I transferred to Fullerton.</p>
+      <p>Member of SND, ONA, IRE, NAHJ, AAJA (ally) and NABJ (ally).</p>
     </div>
   </article>
 </section>
+
+
+
+<section id="awards" class="content">
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">Awards</h2>
+    </header>
+    <div class="post-excerpt">
+      <div class="awards">
+
+      <% json.awards.forEach(function(award) { %>
+        <div class="award">
+          <%=award.year%>: <a href="<%=award.award_url%>" target="_blank"><%=award.source%> <%=award.award%></a> 
+        </div> 
+      <% }); %>
+
+      </div>
+    </div>
+  </article>
+</section>
+
 
 <section id="contact" class="content">
   <article class="post contact">
