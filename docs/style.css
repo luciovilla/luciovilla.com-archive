@@ -535,7 +535,7 @@ margin on the iframe, cause it breaks stuff. */
   overflow: hidden;
 }
 .main-header .inner {
-  width: 80%;
+  width: 74%;
 }
 .main-nav {
   position: relative;
@@ -1332,10 +1332,6 @@ body:not(.post-template) .post-title {
     font-size: 4rem;
     letter-spacing: -1px;
   }
-  .page-description {
-    font-size: 1.8rem;
-    line-height: 1.5em;
-  }
   .post {
     font-size: 0.95em;
   }
@@ -1495,14 +1491,8 @@ body:not(.post-template) .post-title {
     font-size: 0.95em;
     margin: 0 0 2.5rem 0;
   }
-  .page-title {
-    font-size: 3rem;
-  }
   .post-excerpt p {
     font-size: 0.85em;
-  }
-  .page-description {
-    font-size: 1.6rem;
   }
   h1,
   h2,
@@ -1610,9 +1600,6 @@ body:not(.post-template) .post-title {
   .author-profile .author-meta span {
     font-size: 1.4rem;
   }
-  .archive-template .main-header .page-description {
-    display: none;
-  }
 }
 /* ==========================================================================
    12. Animations
@@ -1697,6 +1684,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.44444;
+}
+.page-description {
+  margin: 2px 0 20px;
 }
 .fa {
   font-size: 22px;
