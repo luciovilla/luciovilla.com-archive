@@ -1802,3 +1802,6 @@ body {
   margin-bottom: 10px;
   text-align: left;
 }
+#awards .award a {
+  border-bottom: 1px solid #ccc;
+}
