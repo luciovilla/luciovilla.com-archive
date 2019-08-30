@@ -1693,9 +1693,6 @@ body {
     font-size: 21px;
   }
 }
-.post-excerpt {
-  display: inline-block;
-}
 .post-excerpt p {
   display: block;
   margin-bottom: 1em;
@@ -1783,14 +1780,21 @@ body {
   text-align: center;
 }
 #awards .awards {
-  max-width: 370px;
+  max-width: 405px;
+  margin: 0 auto;
 }
 #awards .award {
   font-family: "Open Sans";
   font-size: 16px;
   margin-bottom: 10px;
   text-align: left;
+  display: flex;
+}
+#awards .award span {
+  margin-right: 10px;
 }
 #awards .award a {
-  border-bottom: 1px solid #ccc;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  flex: 0 0 80%;
 }
