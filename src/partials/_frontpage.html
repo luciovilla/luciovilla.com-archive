@@ -39,7 +39,7 @@
     <div class="post-excerpt">
       <figure class="bio-image">
         <img src="/assets/img/me.jpg">
-        <div class="byline">Photo by <a target="_blank" href="http://www.raywhitehouse.com/">Ray Whitehouse</a></div>
+        <div class="byline">Photo by <a target="_blank" href="https://www.raywhitehouse.com/">Ray Whitehouse</a></div>
       </figure>
       <p>Hola! I'm a journalist currently working at The Washington Post as a News Designer where I mostly design and code interactive stories. I've worked inside and outside the newsroom and bring a wealth of experience producing stories in various platforms.</p>
       <p>Previously I worked at The San Francisco Chronicle, Hoy; Chicago Tribune's Spanish daily and The Chicago Reporter.</p>
@@ -61,14 +61,14 @@
 <section id="awards" class="content">
   <article class="post">
     <header class="post-header">
-      <h2 class="post-title">Awards</h2>
+      <h2 class="post-title">Awards & Recognitions</h2>
     </header>
     <div class="post-excerpt">
       <div class="awards">
 
         <% json.awards.forEach(function(award) { %>
         <div class="award">
-          <%=award.year%>: <a href="<%=award.award_url%>" target="_blank"><%=award.source%> <%=award.award%></a>
+          <span><%=award.year%>:</span> <a href="<%=award.award_url%>" target="_blank"><%=award.source%> <%=award.award%></a>
         </div>
         <% }); %>
 

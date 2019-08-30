@@ -1751,16 +1751,16 @@ body {
   margin: 0 0 5px;
   padding: 0 10px;
 }
-.item .tools,
-.item .awards {
+.item .awards,
+.item .tools {
   font-family: "Open Sans";
   font-size: 12px;
   padding: 0 10px;
   margin: 0 0 10px;
   line-height: 1.4;
 }
-.item .tools span,
-.item .awards span {
+.item .awards span,
+.item .tools span {
   font-weight: bold;
 }
 .item .repo {
@@ -1781,6 +1781,9 @@ body {
 }
 #awards {
   text-align: center;
+}
+#awards .awards {
+  max-width: 370px;
 }
 #awards .award {
   font-family: "Open Sans";
